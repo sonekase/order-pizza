@@ -20,7 +20,7 @@ h1 {
   font-weight:200;
 }
 
-#photo-button {
+.photo-button {
   font-size: 50px;
   border-radius: 2px;
   background: rgba(0,0,0,0.1);
@@ -33,4 +33,6 @@ h1 {
   font-family: skia;
   font-size: 20px;
   text-align: center;
+  border-color: red;
+  border-style: solid;
 }
