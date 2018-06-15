@@ -24,12 +24,11 @@ anousonekaseumsouk@icloud.com
 
 ## Spec
 
-* Collect user basic information: name.
+* Collect user basic information: name and phone number.
 * User can select pizza size.
 * User can select toppings.
+* Show the pizza order to the user.
 * Show final cost to the user.
-
-
 
 ### Legal
 

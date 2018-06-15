@@ -40,9 +40,11 @@ $(document).ready(function(){
     var newPizza = new PizzaOrder(orderName, orderPhone, pizzaSize, meatsToppings, vegetablesToppings);
     newPizza.calculateCost();
 
-    $('#order-summary').append('<li><span class="pizza-order">' + newPizza.size + '</span></li>');
+    $('#order-summary').append('<li><span class="pizza-order">' + newPizza.size + " " + meatsToppings + " " + vegetablesToppings + '</span></li>');
 
-    $('#order-cost').text(newPizza.price);
+    $('#order-cost').text("$" + newPizza.price);
+
+    $("#order-area").trigger('reset');
 
 
 

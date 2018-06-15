@@ -1,4 +1,4 @@
-.pizza-photo h1{
+.pizza-photo {
   background: url("../img/pizza.jpg") no-repeat, 50% 50%;
   height: 100%;
   width: 100%;
@@ -14,14 +14,19 @@ h1 {
   display: inline-block;
   border-color: red;
   padding: 25%;
-  font-family:  'Source Code Pro', monospace;
+  font-family:'Source Code Pro', monospace;
   font-weight: bolder;
-  font-size: 7em;
+  font-size: 8em;
   font-weight:200;
 }
 
+.item {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 4;
+}
+
 .photo-button {
-  font-size: 50px;
+  font-size: 65px;
   border-radius: 2px;
   background: rgba(0,0,0,0.1);
   color: #FFF;
@@ -30,18 +35,102 @@ h1 {
 }
 
 .intro {
-  font-family:  'Source Code Pro', monospace;
-  font-size: 20px;
+  font-family:'Source Code Pro', monospace;
+  font-size: 25px;
   text-align: center;
   border-color: red;
   border-style: solid;
   padding: inherit;
 }
 
-/* #order-area {
-  border: red;
-  border-style: solid;
-  padding: inherit;
-  text-align: center;
+#order-area {
+  font-family:'Source Code Pro', monospace;
+  font-size: 25px;
+}
 
-} */
+#order-block {
+  text-align: center;
+  font-weight: bold;
+}
+
+#order-block:hover {
+  color: red;
+}
+
+
+.btn-area {
+  text-align: center;
+}
+
+#btn:hover {
+  color: #FFF;
+  background: red;
+}
+
+#btn {
+  font-size: 50px;
+  border-radius: 2px;
+  background: rgba(0,0,0,0.1);
+  color: red;
+  border-color: red;
+  border-width: medium;
+}
+
+.order-total {
+  border: red;
+  font-family:'Source Code Pro', monospace;
+  text-align: center;
+  font-size: 40px;
+}
+
+.order-detail {
+  border: red;
+  font-family:'Source Code Pro', monospace;
+  text-align: center;
+  font-size: 40px;
+}
+
+#end {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  font-family:'Source Code Pro', monospace;
+}
+
+.icons {
+vertical-align: bottom;
+text-align: center;
+font-size: 35px;
+color: red;
+padding: 3em;
+}
+
+.icons a {
+color: red;
+}
+
+a:hover {
+color: black;
+}
+
+@@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 250%;
+  }
+
+  .btn {
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+
+  p {
+    font-size: 100%;
+    line-height: 160%;
+  }
+
+  @media only screen and (min-width 400px) {
+    img {
+      margin: 0;
+      width: 100%;
+    }
+  }
