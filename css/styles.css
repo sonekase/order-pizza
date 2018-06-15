@@ -43,6 +43,22 @@ h1 {
   padding: inherit;
 }
 
+.hide-area {
+  display: none;
+}
+
+#reveal-menu {
+  font-family:'Source Code Pro', monospace;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+#reveal-menu:hover {
+  color: black;
+}
+
 #order-area {
   font-family:'Source Code Pro', monospace;
   font-size: 25px;

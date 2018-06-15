@@ -1,7 +1,9 @@
 // business interface
-function PizzaOrder (name, phone, size, meats, vegetables) {
+function PizzaOrder (name, phone, option, address, size, meats, vegetables) {
   this.orderName = name;
   this.orderPhone = phone;
+  this.orderOption = option;
+  this.orderAddress = address;
   this.size = size;
   this.meats = meats;
   this.vegetables = vegetables;
@@ -23,10 +25,19 @@ $(document).ready(function(){
   }, 'slow');
   });
 
+  $(".clickable").click(function() {
+    $("#order-block").toggle();
+    $(".hide-area").toggle();
+});
+
+
+
   $("#order-area").submit(function(event){
     event.preventDefault();
     var orderName = $("input#order-name").val();
     var orderPhone = $("input#order-phone").val();
+    var orderOption = $("input:radio[name=order-option]:checked").val();
+    var orderAddress = $("input#order-address").val();
     var pizzaSize = $("input:radio[name=size-option]:checked").val();
 
     var meatsToppings = []; $("input:checkbox[name=meats-topping]:checked").each(function(){
@@ -37,38 +48,16 @@ $(document).ready(function(){
       vegetablesToppings.push($(this).val());
     });
 
-    var newPizza = new PizzaOrder(orderName, orderPhone, pizzaSize, meatsToppings, vegetablesToppings);
+    var newPizza = new PizzaOrder(orderName, orderPhone, orderOption, orderAddress, pizzaSize, meatsToppings, vegetablesToppings);
     newPizza.calculateCost();
 
-    $('#order-summary').append('<li><span class="pizza-order">' + newPizza.size + " " + meatsToppings + " " + vegetablesToppings + '</span></li>');
+    $('#order-summary').append('<li><span class="pizza-order">' + newPizza.size + ":" + " " + "for" + " " + orderName + ":" + " " + orderOption + ":" + " " + orderAddress + "" + "" + " " + meatsToppings + " " + vegetablesToppings + '</span></li>');
 
-    $('#order-cost').text("$" + newPizza.price);
+    $('#order-cost').text("Total" +  ":" + " " + "$" + newPizza.price);
 
     $("#order-area").trigger('reset');
 
 
-
-
-
-
-
-
-   //  $("#order-summary").show();
-   // $("input:checkbox[name=vegetables-topping]:checked").each(function(){
-   //    var veggieToppings = $(this).val();
-   //    $("#order-summary").append(veggieTopping + "<br>");
-   //  });
-
-
-
-
   });
-
-
-
-
-
-
-
 
 });

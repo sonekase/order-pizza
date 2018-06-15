@@ -29,76 +29,107 @@
       <br>
       <form id="order-area">
 
-        <h2 id="order-block">Papi's Web Ordering Menu</h2>
-        <div class="row">
-          <div class="col-md-6">
-              <div class="form-group">
-                <label for="order-name">Order For</label>
-                <input id="order-name" class="form-control" type="text">
-              </div>
-            </div>
+        <h2 id="order-block"><span class="clickable">Papi's Web Ordering Menu</span></h2>
+        <div class="hide-area">
+          <h2 id="reveal-menu">Enter Your Order</h2>
+          <div class="row">
             <div class="col-md-6">
-              <!-- <h2>Papi's Web Ordering</h2> -->
                 <div class="form-group">
-                  <label for="order-phone">Phone Number</label>
-                  <input id="order-phone" class="form-control" type="text">
+                  <label for="order-name">Order For</label>
+                  <input id="order-name" class="form-control" type="text">
                 </div>
               </div>
-        </div>
-        <br>
-        <div class="radio">
-          <h2>Pizza Size</h2>
-          <label>
-            <input type="radio" name="size-option" value="large">
-            Large 18" • $25
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size-option" value="Xlarge">
-            XLarge 24" • $30
-          </label>
-        </div>
-        <br>
-        <div class="form-group">
-          <h2>Meats</h2>
-          <p>18" $3 each • 24" $4 each</p>
-          <input type="checkbox" name="meats-topping" value="pepperoni"> Pepperoni<br>
-          <input type="checkbox" name="meats-topping" value="sausage"> Italian Sausage<br>
-          <input type="checkbox" name="meats-topping" value="salami"> Salami<br>
-          <input type="checkbox" name="meats-topping" value="prosciutto"> Prosciutto<br>
-        </div>
-        <br>
-        <div class="form-group">
-          <h2>Vegetables and Herbs</h2>
-          <p>18" $2 each • 24" $3 each</p>
-          <input type="checkbox" name="vegetables-topping" value="bell-peppers"> Bell Peppers<br>
-          <input type="checkbox" name="vegetables-topping" value="onions"> Onions<br>
-          <input type="checkbox" name="vegetables-topping" value="mushrooms"> Mushrooms<br>
-          <input type="checkbox" name="vegetables-topping" value="olives"> Black Olives<br>
-          <input type="checkbox" name="vegetables-topping" value="basils"> Italian Basil<br>
-          <input type="checkbox" name="vegetables-topping" value="garlic"> Roasted Garlic<br>
-        </div>
-        <br>
-        <div class="btn-area">
-          <button type="submit" id="btn">Order Up!</button>
+              <div class="col-md-6">
+                <!-- <h2>Papi's Web Ordering</h2> -->
+                  <div class="form-group">
+                    <label for="order-phone">Phone Number</label>
+                    <input id="order-phone" class="form-control" type="text">
+                  </div>
+                </div>
+          </div>
+          <br>
 
-        </div>
-      </form>
-      <br>
-      <div class="order-detail">
-        <span id="order-summary">Your Order</span>
-      </div>
+          <br>
+          <div class="radio">
+            <h2>Delivery or Pick Up</h2>
+            <label>
+              <input type="radio" name="order-option" value="Delivery">
+              Delivery • Free Local Delivery
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="order-option" value="Pick-Up">
+              Pick Up
+            </label>
+          </div>
+          <br>
 
-      <div class="order-total">
-        <span id="order-cost">Your Total</span>
-      </div>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                  <label for="order-address">Address</label>
+                  <input id="order-address" class="form-control" type="text">
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="radio">
+            <h2>Pizza Size</h2>
+            <label>
+              <input type="radio" name="size-option" value="Large">
+              Large 18" • $25
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size-option" value="Xlarge">
+              XLarge 24" • $30
+            </label>
+          </div>
+          <br>
+          <div class="form-group">
+            <h2>Meats</h2>
+            <p>18" $3 each • 24" $4 each</p>
+            <input type="checkbox" name="meats-topping" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="meats-topping" value="sausage"> Italian Sausage<br>
+            <input type="checkbox" name="meats-topping" value="salami"> Salami<br>
+            <input type="checkbox" name="meats-topping" value="prosciutto"> Prosciutto<br>
+          </div>
+          <br>
+          <div class="form-group">
+            <h2>Vegetables and Herbs</h2>
+            <p>18" $2 each • 24" $3 each</p>
+            <input type="checkbox" name="vegetables-topping" value="bell-peppers"> Bell Peppers<br>
+            <input type="checkbox" name="vegetables-topping" value="onions"> Onions<br>
+            <input type="checkbox" name="vegetables-topping" value="mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="vegetables-topping" value="olives"> Black Olives<br>
+            <input type="checkbox" name="vegetables-topping" value="basils"> Italian Basil<br>
+            <input type="checkbox" name="vegetables-topping" value="garlic"> Roasted Garlic<br>
+          </div>
+          <br>
+          <div class="btn-area">
+            <button type="submit" id="btn">Order Up!</button>
+
+          </div>
+        </form>
+          <br>
+          <div class="order-detail">
+            <span id="order-summary">Your Order</span>
+          </div>
+
+          <div class="order-total">
+            <span id="order-cost">Your Total</span>
+          </div>
+        </div>
+        <br>
     </div>
-      <br>
+
       <div class="icons">
-        <a href="https://github.com/sonekase/beep-boop" class="fa fa-github"></a>
+        <a href="https://github.com/sonekase/order-pizza" class="fa fa-github"></a>
         <a href="mailto:anousonekaseumsouk@icloud.com" class="fa fa-envelope"></a>
       <footer><p id="end">&copy; 2018 Anousone Kaseumsouk</p></footer>
     </div>
+
   </body>
 </html>
