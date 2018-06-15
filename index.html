@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Order Pizza</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section class="pizza-photo">
+      <h1>Papi's Pizzeria<br>
+        <button id="photo-button" id="scroll">Order Now</button></h1>
+    </section >
+    <br>
+    <div class="container">
+      <div class="intro">
+        <h2>Papi's Pizzera</h2>
+        <p>The best pizza in Seattle, you can feel the love and pride in each of our pizzas. The ingredients we use are of the highest quality. We use fresh whole milk mozzarella cheese, San Marzano tomatoes imported from Italy, handmade sausage and fresh vegetables. Our toppings have intense flavor, so we recommend that you select only a few for your pizza so as to taste them each individually.</p>
+        <p>We keep our pies simple so your palate can enjoy the perfect marriage of ingredients and craft that is a Papi's Pizzeria Pizza. <i>Mangia!</i></p>
+      </div>
+      <!-- // create on-click to display pizza order area //  -->
+      <br>
+      <form id="order-area">
+
+        <h2>Papi's Web Ordering</h2>
+        <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                <label for="order-name">Order For</label>
+                <input id="order-name" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- <h2>Papi's Web Ordering</h2> -->
+                <div class="form-group">
+                  <label for="order-name">Phone Number</label>
+                  <input id="order-name" class="form-control" type="text">
+                </div>
+              </div>
+        </div>
+
+
+
+        <div class="radio">
+          <h2>Pizza Size</h2>
+          <label>
+            <input type="radio" name="size-option" value="large">
+            Large 18" : $24.99
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size-option" value="xlarge">
+            XLarge 24" : $29.99
+          </label>
+        </div>
+
+        <div class="form-group">
+          <h2>Meats</h2>
+          <p>18" 2.99 each • 24" 3.99 each</p>
+          <input type="checkbox" name="meats-topping" value="pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="meats-topping" value="sausage"> Italian Sausage<br>
+          <input type="checkbox" name="meats-topping" value="salami"> Salami<br>
+          <input type="checkbox" name="meats-topping" value="prosciutto"> Prosciutto<br>
+        </div>
+        <div class="form-group">
+          <h2>Vegetables and Herbs</h2>
+          <p>18" 1.99 each • 24" 2.99 each</p>
+          <input type="checkbox" name="vegetables-topping" value="bell-peppers"> Bell Peppers<br>
+          <input type="checkbox" name="vegetables-topping" value="onions"> Onions<br>
+          <input type="checkbox" name="vegetables-topping" value="mushrooms"> Mushrooms<br>
+          <input type="checkbox" name="vegetables-topping" value="olives"> Black Olives<br>
+          <input type="checkbox" name="vegetables-topping" value="basils"> Italian Basil<br>
+          <input type="checkbox" name="vegetables-topping" value="garlic"> Roasted Garlic<br>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Order Up!</button>
+
+      </form>
+      <br>
+      <span id="order-summary">
+        <p>Thank You for your web order, your pizza will be ready in 30 minutes!</p>
+      </span>
+
+
+
+    </div>
+  </body>
+</html>
