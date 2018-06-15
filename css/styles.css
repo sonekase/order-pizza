@@ -14,9 +14,9 @@ h1 {
   display: inline-block;
   border-color: red;
   padding: 25%;
-  font-family: skia;
+  font-family:  'Source Code Pro', monospace;
   font-weight: bolder;
-  font-size: 6em;
+  font-size: 7em;
   font-weight:200;
 }
 
@@ -30,9 +30,18 @@ h1 {
 }
 
 .intro {
-  font-family: skia;
+  font-family:  'Source Code Pro', monospace;
   font-size: 20px;
   text-align: center;
   border-color: red;
   border-style: solid;
+  padding: inherit;
 }
+
+/* #order-area {
+  border: red;
+  border-style: solid;
+  padding: inherit;
+  text-align: center;
+
+} */
