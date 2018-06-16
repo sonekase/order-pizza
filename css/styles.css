@@ -12,12 +12,16 @@ h1 {
   color: #FFF;
   text-align: center;
   display: inline-block;
-  border-color: red;
+  border-color: #ff0101;
   padding: 25%;
   font-family:'Source Code Pro', monospace;
   font-weight: bolder;
   font-size: 8em;
   font-weight:200;
+}
+
+#red {
+  color: #ff0101;
 }
 
 .item {
@@ -26,21 +30,33 @@ h1 {
 }
 
 .photo-button {
-  font-size: 65px;
-  border-radius: 2px;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border-color: #ff0101;
+  border-width: thick;
+  display: inline-block;
+  font-size: 55px;
+  vertical-align: middle;
   color: #FFF;
-  border-color: red;
-  border-width: medium;
+  text-decoration: none
+}
+
+.photo-button:hover {
+  color: #ff0101;
+  background-color: rgba(0,0,0,0);
 }
 
 .intro {
   font-family:'Source Code Pro', monospace;
   font-size: 25px;
   text-align: center;
-  border-color: red;
-  border-style: solid;
-  padding: inherit;
+  border-color: #ff0101;
+  border-style: inset;
+  border-width: thick;
+  padding: 5% 5% 5% 5%;
 }
 
 .hide-area {
@@ -52,7 +68,7 @@ h1 {
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  color: red;
+  color: #ff0101;
 }
 
 #reveal-menu:hover {
@@ -70,37 +86,42 @@ h1 {
 }
 
 #order-block:hover {
-  color: red;
+  color: #ff0101;
 }
-
 
 .btn-area {
   text-align: center;
 }
 
 #btn:hover {
-  color: #FFF;
-  background: red;
+  color: #ff0101;
+  background: rgba(0,0,0,0.3);
 }
 
 #btn {
-  font-size: 50px;
-  border-radius: 2px;
   background: rgba(0,0,0,0.1);
-  color: red;
-  border-color: red;
-  border-width: medium;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border-color: #ff0101;
+  border-width: thick;
+  display: inline-block;
+  font-size: 55px;
+  vertical-align: middle;
+  color: #FFF;
+  text-decoration: none
 }
 
 .order-total {
-  border: red;
+  border: #ff0101;
   font-family:'Source Code Pro', monospace;
   text-align: center;
   font-size: 40px;
 }
 
 .order-detail {
-  border: red;
+  border: #ff0101;
   font-family:'Source Code Pro', monospace;
   text-align: center;
   font-size: 40px;
@@ -117,12 +138,12 @@ h1 {
 vertical-align: bottom;
 text-align: center;
 font-size: 35px;
-color: red;
+color: #ff0101;
 padding: 3em;
 }
 
 .icons a {
-color: red;
+color: #ff0101;
 }
 
 a:hover {
