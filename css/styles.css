@@ -1,3 +1,8 @@
+body, margin {
+  margin: 0;
+  padding: 0;
+}
+
 .pizza-photo {
   background: url("../img/pizza.jpg") no-repeat, 50% 50%;
   height: 100%;
@@ -12,7 +17,7 @@ h1 {
   color: #FFF;
   text-align: center;
   display: inline-block;
-  border-color: #ff0101;
+  /* border-color: #ff0101; */
   padding: 25%;
   font-family:'Source Code Pro', monospace;
   font-weight: bolder;
