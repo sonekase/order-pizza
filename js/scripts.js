@@ -30,8 +30,6 @@ $(document).ready(function(){
     $(".hide-area").toggle();
 });
 
-
-
   $("#order-area").submit(function(event){
     event.preventDefault();
     var orderName = $("input#order-name").val();
@@ -48,15 +46,16 @@ $(document).ready(function(){
       vegetablesToppings.push($(this).val());
     });
 
+  // what user interface sends to constructor (business logic)
     var newPizza = new PizzaOrder(orderName, orderPhone, orderOption, orderAddress, pizzaSize, meatsToppings, vegetablesToppings);
     newPizza.calculateCost();
 
+  // output area
     $('#order-summary').append('<li><span class="pizza-order">' + newPizza.size + ":" + " " + "for" + " " + orderName + ":" + " " + orderOption + ":" + " " + orderAddress + "" + "" + " " + meatsToppings + " " + vegetablesToppings + '</span></li>');
 
     $('#order-cost').text("Total" +  ":" + " " + "$" + newPizza.price);
 
     $("#order-area").trigger('reset');
-
 
   });
 
